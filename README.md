@@ -13,7 +13,7 @@ Provides a list of depression and anxiety resources.
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 ## Component Hierarchy
-
+![wireframe]()
 
 ## API and Data Sample
 
