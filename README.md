@@ -2,22 +2,20 @@
 
 ## Project Name
 
-Depression and Anxiety Resources
+Greener Living Resources
 
 ## Project Description
 
-Provides a list of depression and anxiety resources.
+Provides a list of resources to help you live a more eco-friendly life!
 
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 ## Component Hierarchy
-![wireframe]()
+<img width="662" alt="screen_shot_2021-09-21_at_1 48 52_pm" src="https://user-images.githubusercontent.com/89033220/134429145-f6e30983-0350-4256-8b52-1ad508cc356d.png">
 
 ## API and Data Sample
-
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
 ```json
 {
@@ -25,9 +23,9 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
     {
       "id": "recAmpBVC9fCEctby",
       "fields": {
-        "phone": "1-800-273-8255",
-        "website": "https://suicidepreventionlifeline.org/",
-        "name": "National Suicide Prevention Lifeline"
+        "name": "Zero Waste Home",
+        "stateName": "A great place to find sustainable household products.",
+        "website": "zerowastehome.com"
       },
       "createdTime": "2021-09-21T19:18:25.000Z"
     },
@@ -39,17 +37,18 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
     {
       "id": "recFlQIipLS185Nev",
       "fields": {
-        "phone": "1-800-662-4357",
-        "website": "https://www.samhsa.gov/find-help/national-helpline",
-        "name": "SAMHSA National Helpline"
+        "name": "Going Zero Waste",
+        "website": "goingzerowaste.com",
+        "stateName": "A blog dedicated to living sustainably by eliminating waste."
       },
       "createdTime": "2021-09-21T19:18:25.000Z"
     },
     {
       "id": "recWbEOxCQ0nCrKqU",
       "fields": {
-        "website": "https://suicidepreventionlifeline.org/chat/",
-        "name": "Suicide Prevention Lifeline CHAT"
+        "name": "US EPA Composting",
+        "stateName": "A valuable resource from the US EPA with information on how to compost at home!",
+        "website": "https://www.epa.gov/recycle/composting-home"
       },
       "createdTime": "2021-09-21T19:18:25.000Z"
     }
@@ -62,17 +61,18 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
+- Find and use external api from airtable
+- Have a working Navbar
 - Render data on page 
-- Allow user to choose favorites 
+- have a separate home, resources, add new resource page
+- allow user to add new resource and have it update in airtable
+
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- add "research" page which links to articles/research showing why reducing consumption,etc. is crucial for our planet
+- add contact form which allows for contact with any suggestions/questions
 
 ## Timeframes
 
@@ -82,9 +82,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Adding Resource Page/components| H | 3hrs | | |
+| Working with React Router Dom | H | 2hrs | | |
+| Adding New Resource Form | H | 3hrs| |  |
+| Adding Navbar | H | 3hrs | | |
+| Working with API | H | 2hrs|  |  |
+| Styling desktop webpages | H | 3hrs | | |
+| Styling mobile pages | M | 2hrs | | |
+
+| Total | H | 18hrs|  |  |
 
 ## SWOT Analysis
 
