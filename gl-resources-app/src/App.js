@@ -24,7 +24,7 @@ function App() {
       {/* <Navbar /> */}
       <Route exact path='/'>
         <main>
-          <h1>Depression and Anxiety Resources</h1>
+          <h1>Greener Living Resources</h1>
         </main>
       </Route>
 
