@@ -9,8 +9,11 @@ Greener Living Resources
 Provides a list of resources to help you live a more eco-friendly life!
 
 ## Wireframes
+![desktop wireframe](https://user-images.githubusercontent.com/89033220/134430145-783152e2-696e-47a2-b378-9b00b5ec0bef.png)
+![desktop wireframe](https://user-images.githubusercontent.com/89033220/134430733-b86c8c57-cef5-4c18-af54-a6b39de9ec7d.png)
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![mobile wireframes](https://user-images.githubusercontent.com/89033220/134431843-a91373c8-d73a-4272-9638-79e5a1365554.png)
+
 
 ## Component Hierarchy
 <img width="662" alt="screen_shot_2021-09-21_at_1 48 52_pm" src="https://user-images.githubusercontent.com/89033220/134429145-f6e30983-0350-4256-8b52-1ad508cc356d.png">
