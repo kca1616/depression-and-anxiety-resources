@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
     const getResources = async() => {
       const response = await axios.get(baseURL, config);
+      console.log(response.data.records);
 
       setResources(response.data.records);
     }
