@@ -3,11 +3,13 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { baseURL, config } from './services';
 import { Route } from 'react-router-dom';
+import Navbar from './components/Navbar.jsx';
+import Resource from './components/Resource.jsx';
 
 
 function App() {
   const [resources, setResources] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(false);
+  
 
   useEffect(() => {
     const getResources = async() => {
@@ -16,16 +18,25 @@ function App() {
       setResources(response.data.records);
     }
     getResources();
-
-  }, [toggleFetch]);
+  },);
 
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       <Route exact path='/'>
-        <main>
+        <div>
           <h1>Greener Living Resources</h1>
+        </div>
+      </Route>
+      <Route path ='/resources'>
+        <main>
+          {resources.map((resource) => (
+            <Resource />
+          ))}
         </main>
+      </Route>
+      <Route path ='/new'>
+
       </Route>
 
       
