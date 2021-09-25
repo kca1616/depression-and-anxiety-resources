@@ -5,6 +5,7 @@ import { baseURL, config } from './services';
 import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Resource from './components/Resource.jsx';
+import Form from './components/Form.jsx';
 
 
 function App() {
@@ -25,19 +26,19 @@ function App() {
     <div className="App">
       <Navbar />
       <Route exact path='/'>
-        <div>
-          <h1>Greener Living Resources</h1>
+        <div className="home">
+          <h1>Greener Living Resource Hub</h1>
         </div>
       </Route>
       <Route path ='/resources'>
         <main>
           {resources.map((resource) => (
-            <Resource />
+            <Resource key={resource.id} resource={resource}/>
           ))}
         </main>
       </Route>
       <Route path ='/new'>
-
+            <Form />
       </Route>
 
       
