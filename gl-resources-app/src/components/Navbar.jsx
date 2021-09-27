@@ -4,7 +4,7 @@ export default function Navbar() {
         <nav>
             <Link to='/' className="navItem">Home </Link>
             <Link to='/resources' className="navItem">Resources </Link>
-            <Link to='/new' className="navItem">Add a New Resource! </Link>
+            <Link to='/new' className="navItem">Add a New Resource </Link>
         </nav>
     )
 }

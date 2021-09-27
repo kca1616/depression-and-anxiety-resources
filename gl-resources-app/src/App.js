@@ -49,6 +49,9 @@ function App() {
         </main>
       </Route>
       <Route path ='/new'>
+            <div className="addTop">
+            <h1>Add a New Resource!</h1>
+            </div>
             <Form />
       </Route>
 
