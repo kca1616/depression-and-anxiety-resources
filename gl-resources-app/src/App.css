@@ -23,7 +23,6 @@ main {
     grid-column-gap: 20px;
     width: 100vw;
     background-color: #EBECEA;
-    
     padding-bottom:10px;
   }
 
@@ -56,10 +55,16 @@ a{
     text-align: center;
     background-size: cover;
     height: 100%;
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     background-position: top 40% right 0px;
     background-repeat: no-repeat;
+  }
+
+  .hometop h1{
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-left: 250px;
+    margin-right: 250px;
   }
 
   .homeDesc{
