@@ -26,9 +26,20 @@ function App() {
     <div className="App">
       <Navbar />
       <Route exact path='/'>
-        <div className="home">
-          <h1>Greener Living Resource Hub</h1>
+        <div className="hometop">
+          <h1>Sustainable Living Resource Hub</h1>
         </div>
+        <div className="homeDesc">
+          <img className="resize" src="https://i.imgur.com/1OHbEaK.jpeg" alt="Reusable bag and oranges"/>
+          <p>This site is designed to help you find valuable resources for more sustainable living. 
+            You can find resources uploaded by other users under the Resources tab.
+            You can also go ahead and add any resources that you find valuable. Enjoy! <br/><br/><br/>
+            Note that we are currently in the process of adding a page where you can share your own
+            eco-friendly tips, and see other people's tips as well!</p>
+        </div>
+        <footer>
+          <p>©2021 Kiana</p>
+        </footer>
       </Route>
       <Route path ='/resources'>
         <main>
