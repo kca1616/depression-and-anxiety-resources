@@ -42,17 +42,28 @@ function App() {
         </footer>
       </Route>
       <Route path ='/resources'>
+        <div className="resourceTop">
+        <h1>Resources</h1>
+        </div>
         <main>
           {resources.map((resource) => (
             <Resource key={resource.id} resource={resource}/>
           ))}
         </main>
+        <footer>
+          <p>©2021 Kiana</p>
+        </footer>
       </Route>
       <Route path ='/new'>
             <div className="addTop">
             <h1>Add a New Resource!</h1>
             </div>
+            <div className="addForm">
             <Form />
+            </div>
+            <footer>
+          <p>©2021 Kiana</p>
+        </footer>
       </Route>
 
       

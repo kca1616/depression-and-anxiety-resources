@@ -27,10 +27,11 @@ function Form(props){
             <label htmlFor="name">Name:</label>
             <input id="name" type="text" required autoFocus value={name} onChange={(e) => setName(e.target.value)}></input>
             <label htmlFor="description">Description:</label>
-            <input type="text" id="description" required value={description} onChange={(e) => setDescription(e.target.value)}></input>
+            <textarea id="description" required value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
             <label htmlFor="wesbite">Website link:</label>
             <input type="text" required value={website} onChange={(e) => setWebsite(e.target.value)}></input>
-            <button type="submit">Submit</button>
+            <span></span>
+            <button type="submit" id="submitButton">Submit</button>
         </form>
     )
 }
