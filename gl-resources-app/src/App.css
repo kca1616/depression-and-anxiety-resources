@@ -152,3 +152,7 @@ a{
     margin-left: 350px;
     margin-right: 0px;
   }
+
+  #note{
+    font-size: 14px;
+  }

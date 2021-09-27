@@ -30,7 +30,7 @@ function Form(props){
             <textarea id="description" required value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
             <label htmlFor="wesbite">Website link:</label>
             <input type="text" required value={website} onChange={(e) => setWebsite(e.target.value)}></input>
-            <span></span>
+            <span id="note">(include https://)</span>
             <button type="submit" id="submitButton">Submit</button>
         </form>
     )
