@@ -1,26 +1,31 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { baseURL, config } from './services';
+import { baseTipsURL, baseURL, config } from './services';
 import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Resource from './components/Resource.jsx';
 import Form from './components/Form.jsx';
+import Tip from './components/Tip.jsx';
+import TipForm from './components/TipForm';
 
 
 function App() {
   const [resources, setResources] = useState([]);
+  const [tips, setTips] = useState([]);
   
 
   useEffect(() => {
-    const getResources = async() => {
+    const getResourcesAndTips = async() => {
       const response = await axios.get(baseURL, config);
+      const tipsResponse = await axios.get(baseTipsURL, config);
       
 
       setResources(response.data.records);
+      setTips(tipsResponse.data.records);
     }
-    getResources();
-  },);
+    getResourcesAndTips();
+  },[]);
 
   return (
     <div className="App">
@@ -60,6 +65,30 @@ function App() {
             </div>
             <div className="addForm">
             <Form />
+            </div>
+            <footer>
+          <p>©2021 Kiana</p>
+        </footer>
+      </Route>
+      <Route path ='/tips'>
+        <div className="tipsTop">
+        <h1>Tips from the Community</h1>
+        </div>
+        <main>
+        {tips.map((tip) => (
+            <Tip key={tip.id} tip={tip}/>
+          ))}
+        </main>
+        <footer>
+          <p>©2021 Kiana</p>
+        </footer>
+      </Route>
+      <Route path ='/newTip'>
+            <div className="addTipTop">
+            <h1>Add a New Tip!</h1>
+            </div>
+            <div className="addForm">
+            <TipForm />
             </div>
             <footer>
           <p>©2021 Kiana</p>

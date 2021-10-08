@@ -24,6 +24,7 @@ main {
     width: 100vw;
     background-color: #EBECEA;
     padding-bottom:10px;
+    max-width:100%;
   }
 
 nav {
@@ -89,7 +90,6 @@ a{
     font-weight: bolder;
   }
 
-
   .resource{
     background-color: rgb(169, 170, 170, 0.5);
     margin-left: 6px;
@@ -98,7 +98,16 @@ a{
     padding: 16px;
     text-align: center;
     box-shadow: 0 0 5px 5px rgb(170, 170, 170);
-    
+  }
+
+  .tip{
+    background-color: rgb(169, 170, 170, 0.5);
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 20px;;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 0 5px 5px rgb(170, 170, 170);
   }
 
   .resize{
@@ -152,6 +161,37 @@ a{
   .addForm {
     background-color: #EBECEA;
   }
+
+  .tipsTop {
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    padding: 150px 0px 150px 0px;
+    background-size: cover;
+    background-position: top 50% right 0px;
+    background-repeat: no-repeat;
+  }
+
+  .tipsTop h1 {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  .addTipTop {
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    padding: 150px 0px 150px 0px;
+    background-size: cover;
+    background-position: top 60% right 0px;
+    background-repeat: no-repeat;
+  }
+
+  .addTipTop h1{
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
 
   #submitButton {
     margin-left: 350px;
