@@ -34,8 +34,7 @@ nav {
 
 a{
   text-decoration: none;
-    
-  }
+}
 
   
   footer {
@@ -50,23 +49,6 @@ a{
     height: 150px;
     resize: none;
 }
-
-  .hometop {
-    background-image: url("https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    text-align: center;
-    background-size: cover;
-    height: 100%;
-    padding-top: 125px;
-    padding-bottom: 125px;
-    background-position: top 40% right 0px;
-    background-repeat: no-repeat;
-  }
-
-  .hometop h1{
-    background-color: rgb(255, 255, 255, 0.7);
-    margin-left: 250px;
-    margin-right: 250px;
-  }
 
   .homeDesc{
     display: grid;
@@ -128,70 +110,48 @@ a{
     font-weight: bold;
   }
 
-  .resourceTop {
-    text-align: center;
-    background-image: url("https://images.pexels.com/photos/5420575/pexels-photo-5420575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    padding: 150px 0px 150px 0px;
-    background-size: cover;
-    background-position: top 50% right 0px;
-    background-repeat: no-repeat;
-  }
-
-  .resourceTop h1 {
-    background-color: rgb(255, 255, 255, 0.7);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-  
-  .addTop {
-    text-align: center;
-    background-image: url("https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    padding: 150px 0px 150px 0px;
-    background-size: cover;
-    background-position: top 60% right 0px;
-    background-repeat: no-repeat;
-  }
-
-  .addTop h1{
-    background-color: rgb(255, 255, 255, 0.7);
-    margin-left: 200px;
-    margin-right: 200px;
-  }
 
   .addForm {
     background-color: #EBECEA;
   }
 
-  .tipsTop {
+  .topOfPage {
     text-align: center;
+    padding: 150px 0px 150px 0px;
+    background-size: cover;
+    background-position: top 55% right 0px;
+    background-repeat: no-repeat;
+  }
+
+  .topOfPage h1 {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  #hometop {
+    background-image: url("https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 100%;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-position: top 40% right 0px;
+  }
+
+  #resourceTop {
+    background-image: url("https://images.pexels.com/photos/5420575/pexels-photo-5420575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+
+  #addTop {
+    background-image: url("https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+
+  #tipsTop {
     background-image: url("https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    padding: 150px 0px 150px 0px;
-    background-size: cover;
-    background-position: top 50% right 0px;
-    background-repeat: no-repeat;
   }
 
-  .tipsTop h1 {
-    background-color: rgb(255, 255, 255, 0.7);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-
-  .addTipTop {
-    text-align: center;
+  #addTipTop {
     background-image: url("https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    padding: 150px 0px 150px 0px;
-    background-size: cover;
-    background-position: top 60% right 0px;
-    background-repeat: no-repeat;
   }
-
-  .addTipTop h1{
-    background-color: rgb(255, 255, 255, 0.7);
-    margin-left: 350px;
-    margin-right: 350px;
-  }
-
 
   #submitButton {
     margin-left: 350px;
@@ -200,4 +160,55 @@ a{
 
   #note{
     font-size: 14px;
+  }
+
+  @media only screen and (max-width: 1339px){
+    .resize{
+      display: none;
+    }
+    .homeDesc {
+      display: inline;
+    }
+  }
+
+  @media only screen and (max-width: 950px){
+    .topOfPage h1{
+      background-color: rgb(255, 255, 255, 0.7);
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 415px){
+    h1{
+      font-size: 30px;
+    }
+    
+    form {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      width: 280px;
+      margin: 0 auto;
+      grid-row-gap: 8px;
+      font-size: 12px;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 20px;
+      width: 100vw;
+      background-color: #EBECEA;
+      padding-bottom:10px;
+      max-width:100%;
+    }
+
+    #submitButton {
+      margin-left: 80px;
+      margin-right: 0px;
+    }
+
+    
   }

@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Route exact path='/'>
-        <div className="hometop">
+        <div className="topOfPage" id="hometop">
           <h1>Sustainable Living Resource Hub</h1>
         </div>
         <div className="homeDesc">
@@ -47,7 +47,7 @@ function App() {
         </footer>
       </Route>
       <Route path ='/resources'>
-        <div className="resourceTop">
+        <div className= "topOfPage" id="resourceTop">
         <h1>Resources</h1>
         </div>
         <main>
@@ -60,7 +60,7 @@ function App() {
         </footer>
       </Route>
       <Route path ='/new'>
-            <div className="addTop">
+            <div className= "topOfPage" id="addTop">
             <h1>Add a New Resource!</h1>
             </div>
             <div className="addForm">
@@ -71,7 +71,7 @@ function App() {
         </footer>
       </Route>
       <Route path ='/tips'>
-        <div className="tipsTop">
+        <div className= "topOfPage" id="tipsTop">
         <h1>Tips from the Community</h1>
         </div>
         <main>
@@ -84,7 +84,7 @@ function App() {
         </footer>
       </Route>
       <Route path ='/newTip'>
-            <div className="addTipTop">
+            <div className="topOfPage" id="addTipTop">
             <h1>Add a New Tip!</h1>
             </div>
             <div className="addForm">
