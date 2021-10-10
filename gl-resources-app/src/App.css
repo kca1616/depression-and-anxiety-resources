@@ -174,14 +174,21 @@ a{
   @media only screen and (max-width: 950px){
     .topOfPage h1{
       background-color: rgb(255, 255, 255, 0.7);
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 55px;
+      margin-right: 55px;
+    }
+
+    .homeDesc p{
+      background-color: #EBECEA;
+      margin: 0 auto;
+      padding: 20px 20px 20px 20px;
+      font-size: 20px;
     }
   }
 
   @media only screen and (max-width: 415px){
     h1{
-      font-size: 30px;
+      font-size: 25px;
     }
     
     form {
@@ -203,6 +210,17 @@ a{
       background-color: #EBECEA;
       padding-bottom:10px;
       max-width:100%;
+    }
+
+    .homeDesc p{
+      background-color: #EBECEA;
+      margin: 0 auto;
+      padding: 20px 20px 20px 20px;
+      font-size: 16px;
+    }
+
+    #note{
+      font-size: 12px;
     }
 
     #submitButton {

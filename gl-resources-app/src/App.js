@@ -39,7 +39,7 @@ function App() {
           <p>This site is designed to help you find valuable resources for more sustainable living. 
             You can find resources uploaded by other users under the Resources tab.
             You can also go ahead and add any resources that you find valuable. Enjoy! <br/><br/><br/>
-            Note that we are currently in the process of adding a page where you can share your own
+            We have also added the ability to share your own
             eco-friendly tips, and see other people's tips as well!</p>
         </div>
         <footer>
