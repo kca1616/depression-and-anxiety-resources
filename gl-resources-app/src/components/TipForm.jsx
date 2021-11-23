@@ -8,6 +8,7 @@ function TipForm(props){
     const [description, setDescription] = useState("");
     const history = useHistory();
 
+
     const handleSubmit = async(e) => {
         e.preventDefault();
 
@@ -17,6 +18,7 @@ function TipForm(props){
         }
 
         await axios.post(baseTipsURL, { fields: newTip }, config);
+        props.setToggle();
         history.push("/tips");
     }
 

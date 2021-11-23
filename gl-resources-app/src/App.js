@@ -8,11 +8,13 @@ import Resource from './components/Resource.jsx';
 import Form from './components/Form.jsx';
 import Tip from './components/Tip.jsx';
 import TipForm from './components/TipForm';
+import useToggle from './hooks/useToggle.js';
 
 
 function App() {
   const [resources, setResources] = useState([]);
   const [tips, setTips] = useState([]);
+  const [toggle, setToggle] = useToggle();
   
 
   useEffect(() => {
@@ -25,7 +27,7 @@ function App() {
       setTips(tipsResponse.data.records);
     }
     getResourcesAndTips();
-  },[]);
+  },[toggle]);
 
   return (
     <div className="App">
@@ -64,7 +66,7 @@ function App() {
             <h1>Add a New Resource!</h1>
             </div>
             <div className="addForm">
-            <Form />
+            <Form setToggle={setToggle}/>
             </div>
             <footer>
           <p>©2021 Kiana</p>
@@ -88,7 +90,7 @@ function App() {
             <h1>Add a New Tip!</h1>
             </div>
             <div className="addForm">
-            <TipForm />
+            <TipForm setToggle={setToggle}/>
             </div>
             <footer>
           <p>©2021 Kiana</p>

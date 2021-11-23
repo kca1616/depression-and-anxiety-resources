@@ -19,6 +19,7 @@ function Form(props){
         }
 
         await axios.post(baseURL, { fields: newResource }, config);
+        props.setToggle();
         history.push("/resources");
     }
 
